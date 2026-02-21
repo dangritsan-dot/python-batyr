@@ -29,7 +29,37 @@ h2{margin:0px 12px 14px 12px; font-size:32px; text-shadow: 1px 1px 3px black;}
     box-shadow: 3px 3px 3px black;
     border-radius: 15px;
     padding:7px;}
-
+#charactercard{
+    height: 70vh;
+    width:80vw;
+    position: absolute;
+    align-self: center;
+    border:2px solid rgb(193, 111, 44);}
+#charactercard img{height: 25vh;background-color: rgb(193, 111, 44);background-image:url("images/icon_bg.png");padding: 5px;border-radius: 15px;box-shadow: 3px 3px 6px black;margin:15px;position: relative;}
+#maininfo p{font-size: 24px;padding: 0px 17px;}
+#maininfo{width: 25vw;position: relative;}
+#desc{width:60vw;position:relative;right: 85px;padding: 15px;}
+#desc h2{font-size: 32px;}
+#projectinfo {
+    height: 85vh;
+    width:85vw;
+    position: absolute;
+    align-self: center;
+    border:2px solid rgb(193, 111, 44);
+    background-color: rgb(21, 21, 21, 0.4);
+    text-align: center;
+    flex-direction: column;}
+#scoreboard{
+    height: 50vh;
+    width:65vw;
+    position: absolute;
+    align-self: center;
+    border:2px solid rgb(193, 111, 44);
+    border-radius: 40px;
+    background-color: rgb(21, 21, 21, 0.4);
+    text-align: center;
+    flex-direction: column;}
+#scoreboard th{font-size: 32px;}
 #welcomer{
     height: 40vh;
     width:50vw;
@@ -39,32 +69,32 @@ h2{margin:0px 12px 14px 12px; font-size:32px; text-shadow: 1px 1px 3px black;}
     background-color: rgb(21, 21, 21, 0.4);
     text-align: center;
     flex-direction: column;}
+#projectinfo h2{font-size: 20px;padding:15px}
 #welcomer h2{font-size: 24px;padding:20px}
-#welcomer h1{padding: 15px;border-bottom: 1px solid rgb(193, 111, 44);}
+#welcomer h1, #projectinfo h1{padding: 15px;border-bottom: 1px solid rgb(193, 111, 44);}
 #welcomebuttons{justify-content: space-around;}
 #welcomebuttons button{
-    height: 75px;
-    width:300px;
-    color:white;
+    height: 8vh;
+    width:22vw;
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 16px;
     border: 3px solid rgb(193, 111, 44);
     cursor: pointer;
     box-shadow:3px 3px 6px black;}
-
+#welcomer button a{color:white;text-decoration: none;}
 .blackbg{background-color: rgb(21, 21, 21)}
 .greybg{background-color: rgb(40, 40, 40);}
 .orangetxt{color:rgb(193, 111, 44);}
 .boxfade{box-shadow:0px 0px 12px black;}
 .justifycenter{justify-content: center;}
 
-.herocard img{background-color: rgb(193, 111, 44);background-image:url("images/icon_bg.png");padding: 5px;border-radius: 15px;height: 200px;box-shadow: 3px 3px 6px black;}
+.herocard img{background-color: rgb(193, 111, 44);background-image:url("images/icon_bg.png");padding: 5px;border-radius: 15px;height: 25vh; box-shadow: 3px 3px 6px black;}
 .herocard{
     display:flex; 
     flex-direction:column; 
     align-items: center;
-    height: 500px;
-    width: 350px;
+    height: 60vh;
+    width: 22vw;
     border:1px solid rgb(193, 111, 44);
     margin: 5px;
     padding:15px 5px;
@@ -74,8 +104,8 @@ h2{margin:0px 12px 14px 12px; font-size:32px; text-shadow: 1px 1px 3px black;}
 .herocard h1{font-size: 32px;}
 .herocard h2{font-size:24px;}
 .herocard button{
-    height: 50px;
-    width:250px;
+    height: 7%;
+    width:15%;
     color:white;
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 16px;
@@ -84,13 +114,30 @@ h2{margin:0px 12px 14px 12px; font-size:32px; text-shadow: 1px 1px 3px black;}
     box-shadow:3px 3px 6px black;
     position: absolute;
     bottom: 100px;}
-
-#herocards{height: 650px;justify-content: space-around;align-items: center;position: absolute;}
-#backgroundimage{width:100vw;mix-blend-mode: overlay;cursor:default;}
+#story{
+    position: absolute;
+    text-align:center;
+    flex-direction: column;
+    height: 40vh;}
+#storyimages{
+    position: absolute;
+    height: 25vh;
+    width: 70vw;
+    bottom: -975px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(193, 111, 44, 0.1);
+    box-shadow: 0px 0px 15px rgb(193, 111, 44, 0.1);
+    border-radius: 20px;}
+#storyimages img{height: 25vh;margin:0px 50px;height:135px;}
+#story h1{font-size: 56px; margin:25px}
+#story p{font-size: 35px; width: 85vw;margin:15px; text-align: justify;}
+#herocards{height: 80vh;justify-content: space-around;align-items: center;position: absolute;}
+#backgroundimage{width:100vw;mix-blend-mode: overlay;cursor:default;border-bottom: 1px solid rgb(85, 49, 20);}
 #header img:hover{box-shadow: 0px 0px 6px rgb(193, 111, 44);}
 #pages button:hover{background-color: rgb(55, 55, 55);box-shadow: 0px 0px 6px rgb(193, 111, 44);}
 #pages a:hover{text-shadow: 0px 0px 6px rgb(22, 147, 161);color:rgb(22, 147, 161);}
 #welcomebuttons button:hover, .herocard button:hover{box-shadow: 0px 0px 6px rgb(193, 111, 44);background-color:rgb(193, 111, 44)}
-.herocard button a:visited{color:white;}
+.herocard button a:visited, #welcomer button a{color:white;}
 
 #header h1:hover,#header h2:hover,#welcomer h2:hover, #welcomer h1:hover{text-shadow: 0px 0px 6px rgb(193, 111, 44);}

@@ -70,8 +70,28 @@ h2{margin:0px 12px 14px 12px; font-size:32px; text-shadow: 1px 1px 3px black;}
     text-align: center;
     flex-direction: column;}
 #projectinfo h2{font-size: 20px;padding:15px}
+form{display: flex; flex-direction: column;align-items: center;padding:15px}
+label{font-size: 24px;margin: 10px;}
+#genders{width:40vw;height: 4vh;align-items: center;justify-content: space-around;padding: 0px;}
+#genders div{font-size: 24px;}
+input{border-radius: 10px;border: 1px solid rgb(193, 111, 44);}
+#name{width: 25vw;height: 5vh;color:rgb(193, 111, 44);font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;margin: 15px;}
+#grade{font-size: 24px;color:rgb(193, 111, 44);width:3vw;display: flex;justify-content: center;align-items: center;}
+#grades{border-bottom: 1px solid rgb(193, 111, 44); padding: 15px;}
+#profile{
+    height: 70vh;
+    width:50vw;
+    position: absolute;
+    align-self: center;
+    border:2px solid rgb(193, 111, 44);
+    text-align: center;
+    flex-direction: column;}
+#clan{margin:10px}
+#submit{width: 10vw;margin: 15px;height:5vh;border-radius: 0px;color:white}
+#leftarrow, #rightarrow{width: 3vw;border-radius: 15px;border: 1px solid rgb(193, 111, 44);}
+#leftarrow img, #rightarrow img{width: 2vw;}
 #welcomer h2{font-size: 24px;padding:20px}
-#welcomer h1, #projectinfo h1{padding: 15px;border-bottom: 1px solid rgb(193, 111, 44);}
+#welcomer h1, #projectinfo h1, #profile h1{padding: 15px;border-bottom: 1px solid rgb(193, 111, 44);}
 #welcomebuttons{justify-content: space-around;}
 #welcomebuttons button{
     height: 8vh;
@@ -94,7 +114,7 @@ h2{margin:0px 12px 14px 12px; font-size:32px; text-shadow: 1px 1px 3px black;}
     flex-direction:column; 
     align-items: center;
     height: 60vh;
-    width: 22vw;
+    width: 23vw;
     border:1px solid rgb(193, 111, 44);
     margin: 5px;
     padding:15px 5px;
@@ -137,7 +157,7 @@ h2{margin:0px 12px 14px 12px; font-size:32px; text-shadow: 1px 1px 3px black;}
 #header img:hover{box-shadow: 0px 0px 6px rgb(193, 111, 44);}
 #pages button:hover{background-color: rgb(55, 55, 55);box-shadow: 0px 0px 6px rgb(193, 111, 44);}
 #pages a:hover{text-shadow: 0px 0px 6px rgb(22, 147, 161);color:rgb(22, 147, 161);}
-#welcomebuttons button:hover, .herocard button:hover{box-shadow: 0px 0px 6px rgb(193, 111, 44);background-color:rgb(193, 111, 44)}
+#welcomebuttons button:hover, .herocard button:hover, #submit:hover{box-shadow: 0px 0px 6px rgb(193, 111, 44);background-color:rgb(193, 111, 44)}
 .herocard button a:visited, #welcomer button a{color:white;}
 
 #header h1:hover,#header h2:hover,#welcomer h2:hover, #welcomer h1:hover{text-shadow: 0px 0px 6px rgb(193, 111, 44);}

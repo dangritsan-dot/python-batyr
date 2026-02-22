@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Python Batyr</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="icon" href="images/unity.png" type="image/x-icon">
+        <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <div id="header" class="boxfade">
+            <div>
+                <img src="images/unity.png" height="100px" class="greybg" draggable="false">
+                <nav>
+                    <h1>PYTHON</h1>
+                    <h2 class="orangetxt">BATYR</h2>
+                </nav>
+            </div>
+            <div id="pages">
+                <a class="orangetxt" href="index.html">Юрта</a>
+                <a class="orangetxt" href="legends.html">Легенды</a>
+                <a class="orangetxt" href="scoreboard.html">Доска почёта</a>
+                <a class="orangetxt" href="profile.html">Батыр</a>
+                <button class="greybg orangetxt" id="language">RU</button>
+            </div>
+        </div>
+        <div class="justifycenter" id="mainpage">
+            <img src="images/background.png" id="backgroundimage" draggable="false">
+            <div id="profile" class="boxfade justifycenter blackbg">
+                <h1>Создание профиля:</h1>
+                <form>
+                    <label for="name">Введите своё имя:</label>
+                    <input id="name" type="text" class="greybg" name="name" placeholder="Введите своё имя здесь..." required>
+                    <div id="genders">
+                        <div>
+                            <label for="male">ученик</label>
+                            <input id="male" type="radio" name="gender" checked>
+                        </div>
+                        <div>
+                            <label for="female">ученица</label>
+                            <input id="female" type="radio" name="gender">
+                        </div>
+                        <div>
+                            <label for="teacher">учитель</label>
+                            <input id="teacher" type="radio" name="gender">
+                        </div>
+                    </div>
+                    <div id="grades">
+                        <label for="grade">В каком классе ты учишься?</label>
+                        <input id="grade" type="number" min="1" max="12" class="greybg" name="grade" required>
+                    </div>
+                    <label>В каком клане ты хочешь быть?</label>
+                    <div id="clan">
+                        <button id="leftarrow" type="button" class="greybg"><img src="images/left-arrow.png"></button>
+                        <h2 id="clans">TazyCoders</h2>
+                        <button id="rightarrow" type="button" class="greybg"><img src="images/right-arrow.png"></button>
+                    </div>
+                    <input type="submit" value="Готово!" id="submit" class="greybg">
+                </form>
+            </div>
+        </div>
+        <footer class="blackbg">
+            <img src="images/unity.png" height="75px" width="75px" class="blackbg" draggable="false">
+            <h1>Python Batyr © 2026</h1>
+            <h2>Научный проект</h2>
+        </footer>
+    </body>
+</html>

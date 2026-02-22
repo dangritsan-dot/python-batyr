@@ -63,13 +63,15 @@ function setLanguage(){
 function update(){
     if (localStorage.getItem('lang') == "kz"){
         document.getElementById("language").innerText = "KZ";
-        document.getElementById("name").placeholder = "Атыңызды осы жерге енгізіңіз...";
-        document.getElementById("submit").value = "Дайын!"
+        if (document.getElementById("name") != null && document.getElementById("submit") != null){
+            document.getElementById("name").placeholder = "Атыңызды осы жерге енгізіңіз...";
+            document.getElementById("submit").value = "Дайын!"}
     }
     else {
         document.getElementById("language").innerText = "RU";
-        document.getElementById("name").placeholder = "Введите своё имя здесь...";
-        document.getElementById("submit").value = "Готово!"}
+        if (document.getElementById("name") != null && document.getElementById("submit") != null){
+            document.getElementById("name").placeholder = "Введите своё имя здесь...";
+            document.getElementById("submit").value = "Готово!"}}
     go_through("a", translation_list_a);
     go_through("h1", translation_list_h1);
     go_through("h2", translation_list_h2);
